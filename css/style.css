@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@600;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+    --color-blue: #594FFB;
+    --color-dark: #000;
+    --color-light: #fff;
+    --font-jura: "Jura", sans-serif;
+    --font-lato: "Lato", sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+img {
+    display: block;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+body {
+    font-family: var(--font-lato);
+    font-weight: 400;
+    font-style: normal;
+    background: #0a0a23;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 8.3334%;
+}
+
+.btn {
+    border-radius: 50px;
+    font-family: var(--font-jura);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: var(--color-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+   inset: 0 0 0 0;
+    border: 1px solid #6823FF;
+    border-radius: 50px;
+    transform: rotate(5deg);
+}
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+.header {
+    padding: 73px 0 70px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: var(--color-light);
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+}
+
+.header__controls {
+    max-width: 250px;
+    width: 100%;
+}
+
+.header__btn {
+    max-width: 250px;
+    padding: 18px 0 19px 0;
+}
+
+.logo {
+    max-width: 173px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    gap: 30px;
+    width: 100%;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+    max-width: 675px;
+    width: 100%;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.menu__item {
+}
+
+.menu__link {
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    border: 1px solid var(--color-light);
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+
+
+.burger {
+}
+
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+/* HERO SECTION */
+/* HERO SECTION */
+/* HERO SECTION */
+
+.hero {
+    padding-top: 173px;
+    background-image: url(../images/hero-bg.webpпше і);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* HERO SECTION */
+/* HERO SECTION */
+/* HERO SECTION */
