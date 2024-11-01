@@ -67,10 +67,16 @@ body {
 .btn::after {
     content: '';
     position: absolute;
-   inset: 0 0 0 0;
+    inset: 0 0 0 0;
     border: 1px solid #6823FF;
     border-radius: 50px;
     transform: rotate(5deg);
+    transition: all .5s ease;
+}
+
+.btn:hover::after {
+    transform: rotate(0deg);
+    box-shadow: 0px 0px 20px 5px var(--color-blue);
 }
 
 /* HEADER */
@@ -156,11 +162,85 @@ body {
 
 .hero {
     padding-top: 173px;
-    background-image: url(../images/hero-bg.webpпше і);
+    padding-bottom: 133px;
+    background-image: url(../images/hero-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+.hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.hero__content {
+    max-width: 1085px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero__title {
+    font-family: var(--font-jura);
+    font-weight: 700;
+    max-width: 1015px;
+    text-align: center;
+    color: var(--color-light);
+    font-size: 64px;
+    line-height: 76px;
+}
+
+.hero__text {
+    color: var(--color-light);
+    font-size: 22px;
+    line-height: 28px;
+    max-width: 575px;
+    width: 100%;
+    font-family: var(--font-lato);
+    font-weight: 400;
+}
+
+.hero__btn {
+    max-width: 318px;
+    padding: 25px 0;
+}
+
+hr {
+    height: 101px;
+    width: 1px;
+    background-color: var(--color-light);
+}
+
+.hero__info {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(50px);
+    border-radius: 15px;
+    padding: 27px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1428px;
+    width: 100%;
+    color: var(--color-light);
+}
+
+.hero__info-text {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    color: var(--color-light);
+}
+
+.hero__info-text span {
+    font-weight: 400;
+    display: block;
+}
+
 
 /* HERO SECTION */
 /* HERO SECTION */
