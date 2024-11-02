@@ -40,7 +40,6 @@ body {
     font-family: var(--font-lato);
     font-weight: 400;
     font-style: normal;
-    background: #0a0a23;
 }
 
 .container {
@@ -109,16 +108,21 @@ body {
 .header__btn {
     max-width: 250px;
     padding: 18px 0 19px 0;
+    font-size: 20px;
+    line-height: 22px;
 }
 
 .logo {
     max-width: 173px;
+    margin-top: 7px;
+    margin-left: 4px;
 }
 
 .menu {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
-    max-width: 1080px;
+    max-width: 1020px;
     gap: 30px;
     width: 100%;
 }
@@ -126,10 +130,12 @@ body {
 .menu__list {
     display: flex;
     align-items: center;
-    max-width: 675px;
+    max-width: 690px;
     width: 100%;
     justify-content: space-between;
     flex-shrink: 0;
+    font-size: 18px;
+    line-height: 22px;
 }
 
 .menu__item {
@@ -151,6 +157,7 @@ body {
     border-radius: 5px;
     font-size: 14px;
     line-height: 17px;
+    transform: translate(-15px, -3px);
 }
 
 
@@ -167,7 +174,7 @@ body {
 /* HERO SECTION */
 
 .hero {
-    padding-top: 173px;
+    padding-top: 195px;
     padding-bottom: 133px;
     background-image: url(../images/hero-bg.webp);
     background-repeat: no-repeat;
@@ -179,7 +186,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
 }
 
 .hero__content {
@@ -188,7 +195,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 44px;
 }
 
 .hero__title {
@@ -199,6 +206,7 @@ body {
     color: var(--color-light);
     font-size: 64px;
     line-height: 76px;
+    margin: auto;
 }
 
 .hero__text {
@@ -209,10 +217,11 @@ body {
     width: 100%;
     font-family: var(--font-lato);
     font-weight: 400;
+    letter-spacing: 0.01em;
 }
 
 .hero__btn {
-    max-width: 318px;
+    max-width: 325px;
     padding: 25px 0;
 }
 
@@ -221,6 +230,7 @@ hr {
     width: 1px;
     background-color: var(--color-light);
 }
+
 
 .hero__info {
     background: rgba(255, 255, 255, 0.1);
@@ -235,16 +245,35 @@ hr {
     color: var(--color-light);
 }
 
+.hero__info hr:nth-of-type(1) {
+    transform: translateX(12px);
+}
+
 .hero__info-text {
     font-size: 22px;
     line-height: 28px;
     font-weight: 700;
     color: var(--color-light);
+    letter-spacing: -0.04em;
+}
+
+.hero__info-text:nth-child(1) {
+    transform: translate(6px,3px);
+}
+.hero__info-text:nth-child(3) {
+    transform: translateY(2px);
+    letter-spacing: -0.03em;
+}
+.hero__info-text:nth-child(5) {
+    transform: translate(-3px, 2px);
+    letter-spacing: -0.02em;
 }
 
 .hero__info-text span {
     font-weight: 400;
     display: block;
+    margin-top: 15px;
+    letter-spacing: 0.02em;
 }
 
 /* HERO SECTION */
@@ -309,7 +338,7 @@ hr {
 .benefits__inner {
     color: var(--color-light);
     background-color: var(--color-dark);
-    padding: 100px 0px 170px 0px;
+    padding: 101px 0px 255px 0px;
 }
 
 .benefits__btn {
@@ -328,9 +357,10 @@ hr {
 
 .benefits-card {
     flex: 1 1 calc(50% - 16px);
-    padding: 29px 29px 29px 19px;
+    padding: 30px 29px 29px 19px;
     border-radius: 15px;
     border: 1px solid var(--color-blue);
+    min-height: 285px;
 }
 
 @media (max-width: 1200px) {
@@ -358,10 +388,8 @@ hr {
 .benefits-card__title {
     font-size: 30px;
     line-height: 35px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
     font-family: var(--font-jura);
-    font-size: 30px;
-    line-height: 35px;
     position: relative;
     display: flex;
 
@@ -375,12 +403,16 @@ hr {
     height: 50px;
     background-color: #6823FF;
     left: -10px;
-    top: -10px;
+    top: -8px;
 }
 
 .benefits-card h3 {
     position: relative;
     z-index: 10;
+}
+
+.benefits-card h3 span {
+    display: block;
 }
 
 .benefits-card__title span {
@@ -391,6 +423,31 @@ hr {
 .benefits-card__text {
     font-size: 22px;
     line-height: 28px;
+}
+
+.benefits-card:nth-child(1)  .benefits-card__text {
+    max-width: 730px;
+    letter-spacing: 0.01em;
+}
+.benefits-card:nth-child(2)  .benefits-card__text {
+    max-width: 730px;
+    letter-spacing: 0.01em;
+}
+.benefits-card:nth-child(3)  .benefits-card__text {
+    max-width: 600px;
+    letter-spacing: 0.015em;
+}
+.benefits-card:nth-child(4)  .benefits-card__text {
+    max-width: 730px;
+    letter-spacing: 0.01em;
+}
+.benefits-card:nth-child(5)  .benefits-card__text {
+    max-width: 650px;
+    letter-spacing: 0.015em;
+}
+.benefits-card:nth-child(6)  .benefits-card__text {
+    max-width: 730px;
+    letter-spacing: 0.01em;
 }
 
 
