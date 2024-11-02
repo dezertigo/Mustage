@@ -148,5 +148,18 @@
     </main>
     <footer class="footer">
     </footer>
+    <script>
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu__list');
+        const body = document.querySelector('body');
+
+        if (burger) {
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            menu.classList.toggle('active');
+            body.classList.toggle('lock');
+        });
+        };
+    </script>
 </body>
 </html>
